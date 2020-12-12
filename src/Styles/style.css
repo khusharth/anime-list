@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+:root {
+    --primary-light: #6441a5;
+    --primary-dark: #2a0845;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    font-weight: 400;
+    font-size: 1.6rem;
+    font-family: "Montserrat", sans-serif;
+    background: linear-gradient(
+        120deg,
+        var(--primary-light),
+        var(--primary-dark)
+    );
+    min-height: calc(100vh - 5rem);
+    color: #fff;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+    background-color: #fff;
+    color: #222;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    transition: all 0.3s;
+    margin-bottom: 0.8rem;
+}
+
+.btn:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.btn--read {
+    font-size: 1.5rem;
+    padding: 0.8rem 1.2rem;
+}
+
+.anime__container {
+    max-width: 64rem;
+    margin: 5rem auto;
+    text-align: center;
+}
+
+.anime__title {
+    font-size: 4rem;
+    text-decoration: underline;
+}
+
+.genre__list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 3.5rem 2rem;
+}
+
+.anime__list {
+    list-style: none;
+}
+
+.anime__item {
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 2rem;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border-radius: 0.5rem;
+    margin: 1rem 2rem;
+}
+
+.anime__item p {
+    margin: 1.5rem 0;
+}
